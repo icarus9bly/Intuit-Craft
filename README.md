@@ -1,2 +1,2 @@
 # SnakesAndLadders
-Multi user snakes and laddes games
+Multi user snakes and ladders games
