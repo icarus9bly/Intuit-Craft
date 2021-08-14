@@ -13,3 +13,10 @@ Design and Implement REST API's for a multiuser snake and ladder game, so that i
 4.       Deploy services on Kubernetes platform such that load balancing is even across the POD instances.
 
 5.       Autoscale services based on load to optimize cost.
+
+# ToDo
+- Add grid
+- Reshuffle Snakes and Ladders
+- Mail notification via kafka through mail server
+- Edit mode in grid
+- 
