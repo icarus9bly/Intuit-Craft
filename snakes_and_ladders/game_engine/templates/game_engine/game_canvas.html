@@ -4,13 +4,25 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{% static 'game_engine/css/style.css' %}" />
 {% endblock %}
 {% block content %}
-<button onclick=rollDice()>Roll Dice</button>
-<div id=board>
-</div>
-
-<canvas id=canvas width="1000" height="1000"></canvas>
-{% endblock %}
-{% block javascript %}
-{% load static %}
-<script  src="{% static 'game_engine/js/index.js' %}"></script>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        1 of 2
+      </div>
+      <div class="col">
+        2 of 2
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col">
+        2 of 3
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+  </div>
 {% endblock %}

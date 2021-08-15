@@ -16,5 +16,8 @@ Including another URLconf
 from django.urls import path
 from game_engine import views
 urlpatterns = [
-    path('',views.all_client_side),
+    path('no_js',views.no_js),
+    path('server_side',views.all_server_side),
+    path('basic_grid',views.basic_grid),
+    path('',views.test),
 ]
