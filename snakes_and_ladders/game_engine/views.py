@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def index(request):
-    return render(request, "game_engine/game_canvas.html")
+def all_server_side(request):
+    return render(request, "game_engine/canvas2.html")

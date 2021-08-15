@@ -1,4 +1,16 @@
 {% extends 'game_engine/base.html' %}
+{% block additional_css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" media="screen" href="{% static 'game_engine/css/style.css' %}" />
+{% endblock %}
 {% block content %}
-Hello Yolo
+<button onclick=rollDice()>Roll Dice</button>
+<div id=board>
+</div>
+
+<canvas id=canvas width="1000" height="1000"></canvas>
+{% endblock %}
+{% block javascript %}
+{% load static %}
+<script  src="{% static 'game_engine/js/index.js' %}"></script>
 {% endblock %}
