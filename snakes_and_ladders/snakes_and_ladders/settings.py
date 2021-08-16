@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'game_engine',
-    'rest_framework'
+    'rest_framework',
+    'django_celery_results'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,12 @@ STATIC_ROOT = os.path.join(BASE_DIR,'static')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#Celery configuration
+TOKEN_EXPIRES_IN_SECONDS = 18000
+REDIS_URL = 'redis://{}:{}'.format(os.environ.get('REDIS_HOST','127.0.0.1'), os.environ.get('REDIS_PORT', '6379'))
+CELERY_BROKER_URL = REDIS_URL
+CELERY_RESULT_BACKEND = "django-db"
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'

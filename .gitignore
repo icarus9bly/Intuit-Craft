@@ -2,4 +2,6 @@ lib/
 include/
 pyvenv.cfg
 bin/
+etc
+share/
 __pycache__
