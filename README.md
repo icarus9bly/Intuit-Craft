@@ -49,7 +49,7 @@ pip freeze > requirements.txt
 3. Run it
 
 ```
-(env) $ python manage.py runserver
+(Intuit-Craft) $ python manage.py runserver
 ```
 
 # Rules
@@ -70,6 +70,7 @@ pip freeze > requirements.txt
 - Mail notification via kafka through mail server
 - Edit mode in grid
 - Interactive edit mode in grid
+
 # Project Requirements
 Design and Implement REST API's for a multiuser snake and ladder game, so that it can be used by frontend visualization layer. 
 
