@@ -63,3 +63,9 @@ pip freeze > requirements.txt
 4. With each roll the grid gets updated with an updated score the goal.
 
 5. The first person to reach the end will be declared as a winner
+
+# TBD
+- Add css grid
+- Reshuffle Snakes and Ladders
+- Mail notification via kafka through mail server
+- Interactive edit mode in grid
