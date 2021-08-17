@@ -34,5 +34,5 @@ def all_server_side(request):
     return HttpResponse("Holla")
 
 def test(request):
-    mana_logger.debug('Exception occurred:')
+    mana_logger.info('Exception occurred:')
     return render(request, 'game_engine/game_canvas.html')

@@ -7,9 +7,9 @@ from django.conf import settings
 
 # initiate logger
 
-with open(settings.BASE_DIR + '/snl-logger.yaml') as log_file:
+with open(str(settings.BASE_DIR) + '/snl-logger.yaml') as log_file:
     log_dict = yaml.safe_load(log_file)
-    filename = settings.BASE_DIR + '/logs/snl.log'
+    filename = str(settings.BASE_DIR) + '/logs/snl.log'
     log_dict['handlers']['log_file_handler']['filename'] = filename
 logging.config.dictConfig(log_dict)
 mana_logger = logging.getLogger('naLogger')
