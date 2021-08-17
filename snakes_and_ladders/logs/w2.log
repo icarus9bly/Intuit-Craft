@@ -222,3 +222,5 @@ Trying again in 28.00 seconds... (14/100)
 [2021-08-16 15:19:17,682: INFO/MainProcess] sync with w3@C02XC0Y9JGH5
 [2021-08-16 15:19:39,628: INFO/MainProcess] Task game_engine.tasks.add[4f093413-c04d-43b9-86fa-8507f4dad99c] received
 [2021-08-16 15:20:08,275: INFO/MainProcess] Events of group {task} enabled by remote.
+[2021-08-16 21:30:33,158: INFO/MainProcess] missed heartbeat from w1@C02XC0Y9JGH5
+[2021-08-16 21:30:33,204: INFO/MainProcess] missed heartbeat from w3@C02XC0Y9JGH5
