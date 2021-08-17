@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-
+from game_engine.loggers import mana_logger
 # Create your views here.
 def no_js(request):
     return render(request, "game_engine/no_js.html")
@@ -32,4 +32,5 @@ def all_server_side(request):
     return HttpResponse("Holla")
 
 def test(request):
+    mana_logger.debug('Exception occurred:')
     return render(request, 'game_engine/game_canvas.html')
